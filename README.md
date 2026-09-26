@@ -54,9 +54,3 @@ chosen to minimize out-of-fold RMSE.
 1. Place `train.csv`, `test.csv`, `sample_submission.csv` in the same folder as the notebook (or update `DIR` in the first code cell).
 2. `pip install lightgbm xgboost catboost scikit-learn pandas numpy matplotlib seaborn`
 3. Run all cells top to bottom. This produces `submission.csv`.
-
-## Next steps if there's time before the deadline
-
-- Stack the three models with a Ridge meta-learner on the OOF predictions instead of a linear grid blend
-- Target-encode the `product_code` x `store_code` pair directly (sparse — needs strong smoothing)
-- Pseudo-labeling: add high-confidence test predictions back into training and retrain
